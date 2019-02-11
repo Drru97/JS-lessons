@@ -6,7 +6,7 @@ function Typer(element, input, output) {
 
     var baseRender = this.render;
     this.render = function(text) {
-        this.textInput.oninput = function(event) {
+        this.textInput.oninput = function() {
             this.textOutput.innerHTML = this.textInput.value;
         }.bind(this);
 
